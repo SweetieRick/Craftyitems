@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "craftyitemsmod",
+  "version": "${version}",
+  "name": "Craftyitemsmod",
+  "description": "Crafty Items is a crazy mod that introduces 150+ crafting items to the game with their own unique designs and applications!",
+  "authors": [
+    "SweetieRick"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/craftyitemsmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "sweetierick.craftyitemsmod.client.CraftyitemsmodClient"
+    ],
+    "main": [
+      "sweetierick.craftyitemsmod.Craftyitemsmod"
+    ]
+  },
+  "mixins": [
+    "craftyitemsmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
