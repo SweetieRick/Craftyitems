@@ -5,5 +5,6 @@
   "item.craftyitems.fabric_piece.tooltip": "Un antico pezzo di tessuto",
   "item.craftyitems.rose_pine.tooltip": "Una rosa elegante dai colori severi",
   "item.craftyitems.pine_dust": "Polvere di Pino",
-  "item.craftyitems.scented_ashes": "Polveri Profumate"
+  "item.craftyitems.scented_ashes": "Polveri Profumate",
+  "itemGroup.craftyitems.creative_tab": "Crafty Items"
 }

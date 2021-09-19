@@ -14,6 +14,7 @@ public class RosePineItem extends Item {
         super(settings);
     }
 
+    @Deprecated
     @Override
     public void appendTooltip(ItemStack item, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(new TranslatableText("item.craftyitems.rose_pine.tooltip"));
