@@ -1,0 +1,11 @@
+{
+  "item.craftyitems.fabric_piece": "Fabric Piece",
+  "item.craftyitems.rose_pine": "Rose Pine",
+  "block.craftyitems.rose_pine": "Rose Pine",
+  "item.craftyitems.thick_string": "Thick String",
+  "item.craftyitems.pine_dust": "Pine Dust",
+  "item.craftyitems.fabric_piece.tooltip": "An ancient piece of fabric tissue",
+  "item.craftyitems.rose_pine.tooltip": "An elegant rose of severe colors",
+  "item.craftyitems.scented_ashes": "Scented Ashes",
+  "itemGroup.craftyitems.creative_tab": "Crafty Items"
+}

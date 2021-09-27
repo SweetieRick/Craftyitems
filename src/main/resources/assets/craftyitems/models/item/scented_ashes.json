@@ -1,0 +1,10 @@
+{
+  "parent": "item/generated",
+  "display": {
+    "position": "firstperson_righthand"
+  },
+  "textures": {
+    "layer0": "craftyitems:item/scented_ashes"
+  },
+  "gui_light": "front"
+}
