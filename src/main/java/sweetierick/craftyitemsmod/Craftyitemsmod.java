@@ -3,10 +3,7 @@ package sweetierick.craftyitemsmod;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.block.*
 import net.minecraft.block.Block;
-import net.minecraft.block.Material;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -40,7 +37,7 @@ public class Craftyitemsmod implements ModInitializer {
      * by the mod. Both simple and tile entities are
      * defined here
      */
-    public static final Block RosePineBlock = new RosePineBlock(FabricBlockSettings.of(Material.REPLACEABLE_PLANT));
+    public static final Block RosePineBlock = new RosePineBlock();
 
     /**
      * Here we define our custom creative
