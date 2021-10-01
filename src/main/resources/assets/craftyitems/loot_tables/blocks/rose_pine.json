@@ -8,11 +8,6 @@
           "type": "minecraft:item",
           "name": "craftyitems:rose_pine"
         }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
       ]
     }
   ]
