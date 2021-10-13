@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "block/smallpot_bottom",
-		"2": "block/smallpot_side",
+		"1": "craftyitems:block/smallpot_bottom",
+		"2": "craftyitems:block/smallpot_side",
 		"particle": "Desktop/unnamed"
 	},
 	"elements": [
