@@ -1,0 +1,11 @@
+{
+  "note": "change the fabric piece directive",
+  "parent": "item/generated",
+  "display": {
+    "position": "firstperson_righthand"
+  },
+  "textures": {
+    "layer0": "craftyitems:item/fabric_piece"
+  },
+  "gui_light": "front"
+}

@@ -8,6 +8,7 @@ import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import sweetierick.craftyitemsmod.blocks.RosePineBlock;
+import sweetierick.craftyitemsmod.blocks.SmallCookingPotBlock;
 import sweetierick.craftyitemsmod.blocks.WoodCutterBlock;
 import sweetierick.craftyitemsmod.items.FabricPieceItem;
 
@@ -40,6 +41,7 @@ public class Craftyitemsmod implements ModInitializer {
      */
     public static final Block RosePineBlock = new RosePineBlock();
     public static final Block WoodCutterBlock = new WoodCutterBlock();
+    public static final Block SmallCookingPotBlock = new SmallCookingPotBlock();
 
     /**
      * Here we define our custom creative
@@ -56,6 +58,7 @@ public class Craftyitemsmod implements ModInitializer {
                 stacks.add(new ItemStack(Craftyitemsmod.ScentedAshes));
                 stacks.add(new ItemStack(Craftyitemsmod.WoodCutterBlock));
                 stacks.add(new ItemStack(Craftyitemsmod.WoodSlate));
+                stacks.add(new ItemStack(Craftyitemsmod.SmallCookingPotBlock));
             })
             .build();
 
@@ -74,5 +77,7 @@ public class Craftyitemsmod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("craftyitems", "rose_pine"), new BlockItem(RosePineBlock, new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64)));
         Registry.register(Registry.BLOCK, new Identifier("craftyitems", "woodcutter"), WoodCutterBlock);
         Registry.register(Registry.ITEM, new Identifier("craftyitems", "woodcutter"), new BlockItem(WoodCutterBlock, new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64)));
+        Registry.register(Registry.BLOCK, new Identifier("craftyitems", "small_cooking_pot"), SmallCookingPotBlock);
+        Registry.register(Registry.ITEM, new Identifier("craftyitems", "small_cooking_pot"), new BlockItem(SmallCookingPotBlock, new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64)));
     }
 }

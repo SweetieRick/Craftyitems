@@ -1,0 +1,20 @@
+
+{
+  "variants": {
+    "facing=north": {
+      "model": "craftyitems:block/woodcutter"
+    },
+    "facing=south": {
+      "model": "craftyitems:block/woodcutter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "craftyitems:block/woodcutter",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "craftyitems:block/woodcutter",
+      "y": 90
+    }
+  }
+}
