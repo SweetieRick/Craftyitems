@@ -14,7 +14,7 @@ public class WoodCutterBlock extends Block {
     protected static final VoxelShape SHAPE;
     public static final DirectionProperty FACING;
     public WoodCutterBlock() {
-        super(Settings.of(Material.PISTON));
+        super(Settings.of(Material.STONE).nonOpaque());
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
     }
 
@@ -41,6 +41,11 @@ public class WoodCutterBlock extends Block {
     @Override
     public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.MODEL;
+    }
+
+    @Override
+    public boolean isTranslucent(BlockState state, BlockView world, BlockPos pos) {
+        return state.getFluidState().isEmpty();
     }
 
     @Override
