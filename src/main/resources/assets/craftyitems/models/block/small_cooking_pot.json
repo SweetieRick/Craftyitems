@@ -3,7 +3,7 @@
 	"textures": {
 		"1": "craftyitems:block/smallpot_bottom",
 		"2": "craftyitems:block/smallpot_side",
-		"particle": "minecraft:block/"
+		"particle": "block/campfire_log"
 	},
 	"elements": [
 		{

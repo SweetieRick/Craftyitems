@@ -32,7 +32,6 @@ public class Craftyitemsmod implements ModInitializer {
     public static final Item ThickString = new Item(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64));
     public static final Item PineDust = new Item(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64));
     public static final Item ScentedAshes = new Item(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64));
-    public static final Item WoodSlate = new Item(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64));
     /**
      * This third array are blocks
      * and itemblocks that are registered
@@ -57,7 +56,6 @@ public class Craftyitemsmod implements ModInitializer {
                 stacks.add(new ItemStack(Craftyitemsmod.PineDust));
                 stacks.add(new ItemStack(Craftyitemsmod.ScentedAshes));
                 stacks.add(new ItemStack(Craftyitemsmod.WoodCutterBlock));
-                stacks.add(new ItemStack(Craftyitemsmod.WoodSlate));
                 stacks.add(new ItemStack(Craftyitemsmod.SmallCookingPotBlock));
             })
             .build();
@@ -70,7 +68,6 @@ public class Craftyitemsmod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("craftyitems", "thick_string"), ThickString);
         Registry.register(Registry.ITEM, new Identifier("craftyitems","pine_dust"), PineDust);
         Registry.register(Registry.ITEM, new Identifier("craftyitems","scented_ashes"), ScentedAshes);
-        Registry.register(Registry.ITEM, new Identifier("craftyitems", "wood_slate"), WoodSlate);
 
         // Registering all block objects
         Registry.register(Registry.BLOCK, new Identifier("craftyitems","rose_pine"), RosePineBlock);
