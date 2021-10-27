@@ -16,7 +16,7 @@
       "sweetierick.craftyitemsmod.client.CraftyitemsmodClient"
     ],
     "main": [
-      "sweetierick.craftyitemsmod.Craftyitemsmod"
+      "sweetierick.craftyitemsmod.CraftyItemsMod"
     ]
   },
   "mixins": [
