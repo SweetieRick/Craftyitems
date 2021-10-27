@@ -15,37 +15,15 @@ import sweetierick.craftyitemsmod.items.FabricPieceItem;
 /* import java.rmi.registry.Registry; */
 
 public class Craftyitemsmod implements ModInitializer {
-    // ? Registering all items
-    /**
-     * The first of the list are active items,
-     * items which have a proper individual classes
-     * and they interact with the enviroment or
-     * simply have useful tooltips to them
-     */
+
     public static final Item FabricPiece = new FabricPieceItem(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(1));
-    /**
-     * This second array of items are
-     * passive items, or items which have
-     * a limited use and they don't require
-     * separate classes for added logic
-     */
     public static final Item ThickString = new Item(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64));
     public static final Item PineDust = new Item(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64));
     public static final Item ScentedAshes = new Item(new FabricItemSettings().group(Craftyitemsmod.CRAFTYITEMS_GROUP).maxCount(64));
-    /**
-     * This third array are blocks
-     * and itemblocks that are registered
-     * by the mod. Both simple and tile entities are
-     * defined here
-     */
     public static final Block RosePineBlock = new RosePineBlock();
     public static final Block WoodCutterBlock = new WoodCutterBlock();
     public static final Block SmallCookingPotBlock = new SmallCookingPotBlock();
 
-    /**
-     * Here we define our custom creative
-     * tab menus for all items in the mod
-     */
     public static final ItemGroup CRAFTYITEMS_GROUP = FabricItemGroupBuilder.create(
             new Identifier("craftyitems","creative_tab"))
             .icon(() -> new ItemStack(Items.GLOBE_BANNER_PATTERN))

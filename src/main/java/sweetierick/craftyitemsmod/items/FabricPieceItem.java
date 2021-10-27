@@ -1,5 +1,7 @@
 package sweetierick.craftyitemsmod.items;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -7,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.Util;
@@ -25,8 +28,9 @@ public class FabricPieceItem extends Item {
         return TypedActionResult.success(player.getStackInHand(hand));
     }
 
+    @Environment(EnvType.CLIENT)
     @Override
     public void appendTooltip(ItemStack item, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(new TranslatableText("item.craftyitems.fabric_piece.tooltip"));
+        tooltip.add(new TranslatableText("item.craftyitems.fabric_piece.tooltip").formatted(Formatting.GRAY));
     }
 }
