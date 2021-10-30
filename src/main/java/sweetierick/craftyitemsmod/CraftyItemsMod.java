@@ -4,10 +4,12 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import sweetierick.craftyitemsmod.blocks.*;
+import sweetierick.craftyitemsmod.block.*;
+import sweetierick.craftyitemsmod.block.entity.WoodCutterBlockEntity;
 import sweetierick.craftyitemsmod.items.FabricPieceItem;
 
 /* import java.rmi.registry.Registry; */
@@ -23,6 +25,7 @@ public class CraftyItemsMod implements ModInitializer {
     public static final Block SmallCookingPotBlock = new SmallCookingPotBlock();
     public static final Block MoguShrineBlock = new MoguShrineBlock();
     public static final Block GlassCutterBlock = new GlassCutterBlock();
+    public static BlockEntityType<WoodCutterBlockEntity> WOODCUTTER_BLOCK_ENTITY;
 
     public static final ItemGroup CRAFTYITEMS_GROUP = FabricItemGroupBuilder.create(
             new Identifier("craftyitems","creative_tab"))
@@ -60,5 +63,8 @@ public class CraftyItemsMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("craftyitems", "mogu_shrine"), new BlockItem(MoguShrineBlock, new FabricItemSettings().group(CraftyItemsMod.CRAFTYITEMS_GROUP).maxCount(64)));
         Registry.register(Registry.BLOCK, new Identifier("craftyitems","glasscutter"), GlassCutterBlock);
         Registry.register(Registry.ITEM, new Identifier("craftyitems","glasscutter"), new BlockItem(GlassCutterBlock, new FabricItemSettings().group(CraftyItemsMod.CRAFTYITEMS_GROUP).maxCount(64)));
+
+        // Registering Block Entities
+        // Registry.register(Registry.BLOCK_ENTITY_TYPE, "craftyitems:woodcutter_block_entity", BlockEntityType.Builder.create(WoodCutterBlockEntity::new, WoodCutterBlock).build(null));
     }
 }

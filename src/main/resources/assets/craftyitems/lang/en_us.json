@@ -11,5 +11,6 @@
   "item.craftyitems.scented_ashes": "Scented Ashes",
   "item.craftyitems.fabric_piece.tooltip": "An ancient piece of fabric tissue",
   "item.craftyitems.rose_pine.tooltip": "An elegant rose of severe colors",
+  "container.woodcutter.title": "Woodcutter",
   "itemGroup.craftyitems.creative_tab": "Crafty Items"
 }

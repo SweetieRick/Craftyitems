@@ -1,4 +1,4 @@
-package sweetierick.craftyitemsmod.blocks;
+package sweetierick.craftyitemsmod.block;
 
 import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
