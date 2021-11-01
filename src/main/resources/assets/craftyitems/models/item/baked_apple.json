@@ -1,0 +1,10 @@
+{
+  "parent": "item/generated",
+  "display": {
+    "position": "firstperson_righthand"
+  },
+  "textures": {
+    "layer0": "craftyitems:item/baked_apple"
+  },
+  "gui_light": "front"
+}
