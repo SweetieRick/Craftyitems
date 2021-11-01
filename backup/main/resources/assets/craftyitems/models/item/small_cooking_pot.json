@@ -1,0 +1,10 @@
+{
+  "parent": "item/generated",
+  "display": {
+    "position": "firstperson_righthand"
+  },
+  "textures": {
+    "layer0": "craftyitems:item/small_cooking_pot"
+  },
+  "gui_light": "front"
+}

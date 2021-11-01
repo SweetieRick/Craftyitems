@@ -1,6 +1,5 @@
 package sweetierick.craftyitemsmod.block;
 
-import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;

@@ -1,13 +1,9 @@
 package sweetierick.craftyitemsmod.block;
 
-import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.Hand;
@@ -17,21 +13,13 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import sweetierick.craftyitemsmod.CraftyItemsMod;
-import sweetierick.craftyitemsmod.block.entity.WoodCutterBlockEntity;
 
-public class WoodCutterBlock extends Block {
+public class GlassCutterBlock extends Block {
     protected static final VoxelShape SHAPE;
     public static final DirectionProperty FACING;
-    private static final Text TITLE = new TranslatableText("container.woodcutter.title");
-    public WoodCutterBlock() {
+    public GlassCutterBlock() {
         super(Settings.of(Material.STONE).nonOpaque());
         this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
-    }
-
-    // @Override
-    public BlockEntity createBlockEntity(BlockView blockView) {
-        return new WoodCutterBlockEntity(CraftyItemsMod.WOODCUTTER_BLOCK_ENTITY);
     }
 
     @Override

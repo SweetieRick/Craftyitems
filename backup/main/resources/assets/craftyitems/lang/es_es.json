@@ -1,0 +1,10 @@
+{
+  "item.craftyitems.fabric_piece": "Trozo de tela",
+  "item.craftyitems.rose_pine": "Rosa Elegante",
+  "item.craftyitems.thick_string": "Soga gruesa",
+  "item.craftyitems.fabric_piece.tooltip": "Un antiguo trozo de tela",
+  "item.craftyitems.rose_pine.tooltip": "Una rosa elegante de los colores severos",
+  "item.craftyitems.pine_dust": "Polvo Pino",
+  "item.craftyitems.scented_ashes": "Polvo perfumado",
+  "itemGroup.craftyitems.creative_tab": "Crafty Items"
+}

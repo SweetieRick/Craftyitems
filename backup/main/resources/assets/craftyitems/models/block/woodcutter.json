@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/stonecutter",
+  "textures": {
+    "particle": "craftyitems:block/woodcutter_bottom",
+    "bottom": "craftyitems:block/woodcutter_bottom",
+    "top": "craftyitems:block/woodcutter_top",
+    "side": "craftyitems:block/woodcutter_side",
+    "saw": "craftyitems:block/woodcutter_saw"
+  }
+}

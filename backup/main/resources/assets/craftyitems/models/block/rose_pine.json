@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "craftyitems:block/rose_pine",
+    "rescale": true
+  }
+}

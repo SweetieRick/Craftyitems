@@ -5,13 +5,10 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import sweetierick.craftyitemsmod.block.*;
 import sweetierick.craftyitemsmod.block.entity.WoodCutterBlockEntity;
 import sweetierick.craftyitemsmod.items.FabricPieceItem;
-import sweetierick.craftyitemsmod.items.food.BakedAppleItem;
 
 /* import java.rmi.registry.Registry; */
 
@@ -21,8 +18,6 @@ public class CraftyItemsMod implements ModInitializer {
     public static final Item ThickString = new Item(new FabricItemSettings().group(CraftyItemsMod.CRAFTYITEMS_GROUP).maxCount(64));
     public static final Item PineDust = new Item(new FabricItemSettings().group(CraftyItemsMod.CRAFTYITEMS_GROUP).maxCount(64));
     public static final Item ScentedAshes = new Item(new FabricItemSettings().group(CraftyItemsMod.CRAFTYITEMS_GROUP).maxCount(64));
-    public static final Item BakedApple = new BakedAppleItem(new FabricItemSettings().group(CraftyItemsMod.CRAFTYITEMS_GROUP).maxCount(64)
-            .food(new FoodComponent.Builder().hunger(12).saturationModifier(0.6F).build()));
     public static final Block RosePineBlock = new RosePineBlock();
     public static final Block WoodCutterBlock = new WoodCutterBlock();
     public static final Block SmallCookingPotBlock = new SmallCookingPotBlock();
@@ -43,7 +38,6 @@ public class CraftyItemsMod implements ModInitializer {
                 stacks.add(new ItemStack(CraftyItemsMod.GlassCutterBlock));
                 stacks.add(new ItemStack(CraftyItemsMod.SmallCookingPotBlock));
                 stacks.add(new ItemStack(CraftyItemsMod.MoguShrineBlock));
-                stacks.add(new ItemStack(CraftyItemsMod.BakedApple));
             })
             .build();
 
@@ -55,9 +49,6 @@ public class CraftyItemsMod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("craftyitems", "thick_string"), ThickString);
         Registry.register(Registry.ITEM, new Identifier("craftyitems","pine_dust"), PineDust);
         Registry.register(Registry.ITEM, new Identifier("craftyitems","scented_ashes"), ScentedAshes);
-
-        // Registering all food items
-        Registry.register(Registry.ITEM, new Identifier("craftyitems", "baked_apple"), BakedApple);
 
         // Registering all block objects
         Registry.register(Registry.BLOCK, new Identifier("craftyitems","rose_pine"), RosePineBlock);

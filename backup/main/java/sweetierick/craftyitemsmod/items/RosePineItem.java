@@ -1,7 +1,5 @@
 package sweetierick.craftyitemsmod.items;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -16,8 +14,8 @@ public class RosePineItem extends Item {
         super(settings);
     }
 
+    @Deprecated
     @Override
-    @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack item, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(new TranslatableText("item.craftyitems.rose_pine.tooltip"));
     }

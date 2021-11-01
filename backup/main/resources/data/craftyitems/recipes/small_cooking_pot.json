@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "o o",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:oak_slab"
+    },
+    "o": {
+      "item": "minecraft:brick"
+    }
+  },
+  "result": {
+    "item": "craftyitems:small_cooking_pot",
+    "count": 1
+  }
+}
